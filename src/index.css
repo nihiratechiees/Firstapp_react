@@ -109,3 +109,30 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.card{
+   border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  background: var(--bg);
+  margin: 16px;
+  width: 30%;
+  background-color: bisque;
+
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.btn{
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
