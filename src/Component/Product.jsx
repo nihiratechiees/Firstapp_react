@@ -6,7 +6,7 @@ const Products = ({ name, description, price, prodimage, onAdd, show }) => {
                 <p>{description}</p>
                 <img src={prodimage} className="image"></img>
                 <span>$ {price}</span>
-                <button className="btn" onClick={() => onAdd({ name })}>Buy Now</button>
+                <button className="btn btn-primary" onClick={() => onAdd({ name })}>Buy Now</button>
             </div>
         );
     }else{
