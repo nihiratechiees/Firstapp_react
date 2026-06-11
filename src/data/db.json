@@ -1,0 +1,18 @@
+{
+  "employee": [
+    {
+      "name": "Ramesh",
+      "email": "rm@in.com",
+      "mobile": "9090909090",
+      "salary": 200000,
+      "id": 1
+    },
+    {
+      "name": "Rajesh",
+      "email": "sr@in.com",
+      "mobile": "9090909091",
+      "salary": 100000,
+      "id": 3
+    }
+  ]
+}
