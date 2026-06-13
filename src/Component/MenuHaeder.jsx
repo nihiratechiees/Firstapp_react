@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function MenuHeader(){
     return(
        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -6,13 +8,17 @@ function MenuHeader(){
 
                <ul className="navbar-nav">
                 <li className="nav-item">
-                   <a className="nav-link">Home</a>
+                   <Link className="nav-link" to={"/dashboard"}>Dashboard</Link>
+                </li>
+                <li className="nav-item">
+                   <Link className="nav-link" to={"/"}>Home</Link>
                 </li>
                   <li className="nav-item">
-                   <a className="nav-link">About</a>
+                   <Link className="nav-link" to={"/about"}>About</Link>
+                   
                 </li>
                   <li className="nav-item">
-                   <a className="nav-link">Contact</a>
+                   <Link className="nav-link" to={"/contact"}>Contact</Link>
                 </li>
 
                </ul>
