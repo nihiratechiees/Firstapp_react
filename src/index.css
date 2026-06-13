@@ -109,7 +109,7 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
-
+/* 
 .card{
    border: 1px solid var(--border);
   border-radius: 8px;
@@ -120,7 +120,7 @@ code {
   width: 30%;
   background-color: bisque;
 
-}
+} */
 
 .image{
   width: 100px;

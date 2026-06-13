@@ -14,6 +14,7 @@ import About from './Component/Common/About'
 import Dashboard from './Component/Admin/Dashboard'
 import Profile from './Component/Admin/Profile'
 import Settings from './Component/Admin/Settings'
+import Employeelisting from './Component/Employee/Employeelisting'
 
 function App() {
   let title = "Welcome to React 19.2"
@@ -33,6 +34,7 @@ function App() {
              <Route path='profile/:id/:area' element={<Profile/>}></Route>
              <Route path='setting' element={<Settings/>}></Route>
           </Route>
+          <Route path='/employee' element={<Employeelisting/>}></Route>
           <Route path='*' element={<h2>No page found</h2>}></Route>
         </Routes>
          <AppFooter></AppFooter>
