@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Employeelisting = () => {
 
-    const[empdata, setEmpdata] = useState(null);
+    const [empdata, setEmpdata] = useState(null);
 
     useEffect(() => {
         fetch('http://localhost:3000/employee').then((res) => {
@@ -16,9 +17,17 @@ const Employeelisting = () => {
 
     return (
         <div className="container">
-            <div className="card">
+            <div className="card" >
                 <div className="card-title">
-                    <h1>Employee Listing</h1>
+                    <div className="row">
+                        <div className="col-lg-3">
+                           <Link className="btn btn-primary" to={'/addemployee'}>Add Employee</Link>
+                        </div>
+                        <div className="col-lg-9">
+                            <h3>Employee Listing</h3>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="card-body">
                     <table className="table table-bordered">
@@ -35,17 +44,17 @@ const Employeelisting = () => {
                         <tbody>
                             {
                                 empdata && empdata.map(item => (
-                                  <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.email}</td>
-                                    <td>{item.mobile}</td>
-                                    <td>{item.salary}</td>
-                                    <td>
-                                        <button className="btn btn-primary">Edit</button>
-                                        <button className="btn btn-danger">Delete</button>
-                                     </td>
-                                  </tr>
+                                    <tr key={item.id}>
+                                        <td>{item.id}</td>
+                                        <td>{item.name}</td>
+                                        <td>{item.email}</td>
+                                        <td>{item.mobile}</td>
+                                        <td>{item.salary}</td>
+                                        <td>
+                                            <button className="btn btn-primary">Edit</button>
+                                            <button className="btn btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
                                 ))
                             }
 
