@@ -22,7 +22,6 @@ function App() {
 
 
   return (
-    <>
       <BrowserRouter>
       <MenuHeader></MenuHeader>
         <Routes>
@@ -41,7 +40,6 @@ function App() {
         </Routes>
          <AppFooter></AppFooter>
       </BrowserRouter>
-    </>
 
   )
 }

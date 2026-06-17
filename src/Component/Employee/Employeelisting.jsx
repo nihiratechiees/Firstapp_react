@@ -18,7 +18,7 @@ const Employeelisting = () => {
     return (
         <div className="container">
             <div className="card" >
-                <div className="card-title">
+                <div className="card-header">
                     <div className="row">
                         <div className="col-lg-3">
                            <Link className="btn btn-primary" to={'/addemployee'}>Add Employee</Link>
