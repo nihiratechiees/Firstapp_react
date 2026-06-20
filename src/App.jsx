@@ -16,6 +16,8 @@ import Profile from './Component/Admin/Profile'
 import Settings from './Component/Admin/Settings'
 import Employeelisting from './Component/Employee/Employeelisting'
 import Addemployee from './Component/Employee/AddEmployee'
+import '../node_modules/react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   let title = "Welcome to React 19.2"
@@ -23,6 +25,12 @@ function App() {
 
   return (
       <BrowserRouter>
+      <ToastContainer
+      position='top-right'
+      // hideProgressBar={true}
+      theme='colored'
+      autoClose={false}
+      ></ToastContainer>
       <MenuHeader></MenuHeader>
         <Routes>
           <Route path='/' element={<Home />}></Route>
