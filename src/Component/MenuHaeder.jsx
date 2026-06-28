@@ -23,6 +23,9 @@ function MenuHeader(){
                 <li className="nav-item">
                    <Link className="nav-link" to={"/employee"}>Employee</Link>
                 </li>
+                 <li className="nav-item">
+                   <Link className="nav-link" to={"/product"}>Product</Link>
+                </li>
 
                </ul>
           </div>

@@ -18,6 +18,8 @@ import Employeelisting from './Component/Employee/Employeelisting'
 import Addemployee from './Component/Employee/AddEmployee'
 import '../node_modules/react-toastify/dist/ReactToastify.css'
 import { ToastContainer } from 'react-toastify'
+import Examples from './Component/Examples'
+import Parentproduct from './Component/Parentproduct'
 
 function App() {
   let title = "Welcome to React 19.2"
@@ -44,6 +46,8 @@ function App() {
           </Route>
           <Route path='/employee' element={<Employeelisting/>}></Route>
           <Route path='/addemployee' element={<Addemployee/>}></Route>
+          <Route path='/example' element={<Examples/>}></Route>
+          <Route path='/product' element={<Parentproduct/>}></Route>
           <Route path='*' element={<h2>No page found</h2>}></Route>
         </Routes>
          <AppFooter></AppFooter>

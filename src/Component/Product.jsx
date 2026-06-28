@@ -1,4 +1,5 @@
 const Products = ({ name, description, price, prodimage, onAdd, show }) => {
+   console.log("child");
     if (show) {
         return (
             <div className="card">
