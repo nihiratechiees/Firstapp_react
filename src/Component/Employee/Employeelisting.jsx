@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useFetch from "../CustomHooks/useFetch";
 
 const Employeelisting = () => {
 
-    const [empdata, setEmpdata] = useState(null);
+    // const [empdata, setEmpdata] = useState(null);
 
-    useEffect(() => {
-        fetch('http://localhost:3000/employee').then((res) => {
-            return res.json();
-        }).then((resp) => {
-            setEmpdata(resp)
-        }).catch((err) => {
-            console.log(err.message)
-        })
-    }, [])
+    // useEffect(() => {
+    //     fetch('http://localhost:3000/employee').then((res) => {
+    //         return res.json();
+    //     }).then((resp) => {
+    //         setEmpdata(resp)
+    //     }).catch((err) => {
+    //         console.log(err.message)
+    //     })
+    // }, [])
+
+    const empdata=useFetch('http://localhost:3000/employee')
 
     return (
         <div className="container">
