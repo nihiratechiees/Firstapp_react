@@ -28,5 +28,23 @@
       "salary": "20000",
       "id": 5
     }
+  ],
+  "user": [
+    {
+      "username": "nihira",
+      "email": "nt@in.com",
+      "mobile": "78999999",
+      "password": "Test123",
+      "confirmpassword": "Test123",
+      "id": 1
+    },
+    {
+      "username": "nihira",
+      "email": "nt@in.com",
+      "mobile": "78999999",
+      "password": "Test123",
+      "confirmpassword": "Test123",
+      "id": 2
+    }
   ]
 }
