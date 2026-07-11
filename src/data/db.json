@@ -58,6 +58,39 @@
       "companytype": "private",
       "isactive": true,
       "id": 1
+    },
+    {
+      "companyname": "ARM InfoTech",
+      "registerdate": "2026-07-11",
+      "email": "nt@in.com",
+      "mobile": "7899999996",
+      "industrytype": "finance",
+      "address": "Chennai",
+      "companytype": "private",
+      "isactive": true,
+      "id": 2
+    },
+    {
+      "companyname": "NT Infotech New 1",
+      "registerdate": "2026-07-17",
+      "email": "nt11233@in.com",
+      "mobile": "9898998878",
+      "industrytype": "technology",
+      "address": "1st srtreet\nChennai",
+      "companytype": "partnership",
+      "isactive": true,
+      "id": 3
+    },
+    {
+      "companyname": "ANJ Finance",
+      "registerdate": "2026-07-17",
+      "email": "anj@in.com",
+      "mobile": "9800987789",
+      "industrytype": "finance",
+      "address": "new street\nChennai",
+      "companytype": "public",
+      "isactive": true,
+      "id": 4
     }
   ]
 }
