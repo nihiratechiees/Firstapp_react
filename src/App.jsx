@@ -22,6 +22,7 @@ import Examples from './Component/Examples'
 import Parentproduct from './Component/Parentproduct'
 import Register from './Component/Register'
 import Addcompany from './Component/Addcompany'
+import Companylist from './Component/Companylist'
 
 function App() {
   let title = "Welcome to React 19.2"
@@ -51,7 +52,9 @@ function App() {
           <Route path='/example' element={<Examples/>}></Route>
           <Route path='/product' element={<Parentproduct/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
+            <Route path='/company' element={<Companylist/>}></Route>
           <Route path='/addcompany' element={<Addcompany/>}></Route>
+           <Route path='/editcompany/:id' element={<Addcompany/>}></Route>
           <Route path='*' element={<h2>No page found</h2>}></Route>
         </Routes>
          <AppFooter></AppFooter>

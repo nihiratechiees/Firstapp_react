@@ -46,5 +46,18 @@
       "confirmpassword": "Test123",
       "id": 2
     }
+  ],
+  "company": [
+    {
+      "companyname": "NT Infotech",
+      "registerdate": "2026-07-11",
+      "email": "nt@in.com",
+      "mobile": "9898989898",
+      "industrytype": "healthcare",
+      "address": "1st street,\nNew nager",
+      "companytype": "private",
+      "isactive": true,
+      "id": 1
+    }
   ]
 }
