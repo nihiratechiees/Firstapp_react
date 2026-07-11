@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Addcompany = () => {
@@ -33,6 +33,7 @@ const Addcompany = () => {
 
     const navigate = useNavigate();
     const { id } = useParams();
+    const inputref=useRef(null);
 
     const handleChange = (e) => {
         debugger;
@@ -46,6 +47,7 @@ const Addcompany = () => {
     }
 
     useEffect(() => {
+        inputref.current.focus();
         if (id) {
             fetch('http://localhost:3000/company/' + id)
                 .then((res) => res.json())
@@ -162,7 +164,7 @@ const Addcompany = () => {
 
                                 <div className="form-group col-lg-12">
                                     <label>Company Name</label>
-                                    <input value={formValues.companyname} name="companyname" onChange={handleChange} type="text" className="form-control" />
+                                    <input ref={inputref} value={formValues.companyname} name="companyname" onChange={handleChange} type="text" className="form-control" />
                                     <p className="text-danger">{formErrors.companyname}</p>
                                 </div>
 
@@ -284,6 +286,7 @@ const Addcompany = () => {
                         </div>
                         <div className="card-action">
                             <button disabled={!isSubmit} className="btn btn-primary btn-full" type="submit">{id ? "Update" : "Register"}</button>
+                            <Link to={'/company'} className="btn btn-danger btn-full">Cancel</Link>
                         </div>
                     </div>
                 </form>
